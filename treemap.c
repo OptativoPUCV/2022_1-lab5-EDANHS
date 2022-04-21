@@ -56,6 +56,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     }else{
         tree->current->right = newNode;
     }
+    newNode->parent = tree->current;
 }
 
 TreeNode * minimum(TreeNode * x){
@@ -89,6 +90,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         } else if ((tree->lower_than(aux->pair->key,key))==1){
             aux = aux->right;
         } else{
+            tree->current = aux;
             return aux->pair;
         }
     }
