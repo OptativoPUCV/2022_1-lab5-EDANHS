@@ -72,3 +72,24 @@ Thu Apr 21 12:10:16 HSP 2022:
  tests:  15|4
 total_score: 25/70
 53cd562
+Fri Apr 22 20:03:01 HSP 2022: 
+ treemap.c | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+In file included from test.c:4:0:
+treemap.c:103:5: error: data definition has no type or storage class [-Werror]
+     free(node);
+     ^~~~
+treemap.c:103:5: error: type defaults to 'int' in declaration of 'free' [-Werror=implicit-int]
+treemap.c:103:5: error: parameter names (without types) in function declaration [-Werror]
+treemap.c:103:5: error: conflicting types for 'free'
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: previous declaration of 'free' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+In file included from test.c:4:0:
+treemap.c:104:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b338201
