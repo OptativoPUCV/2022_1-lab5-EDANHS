@@ -166,6 +166,9 @@ Pair * nextTreeMap(TreeMap * tree) {
             //printf("key2: %d\n",*(int*)tree->current->pair->key);
             return aux->pair;
         }
+        if(is_equal(tree,aux->pair->key,tree->current->pair->key)==1){
+            return aux->pair;
+        }
         
     }
     //printf("NULL\n");
