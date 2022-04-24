@@ -164,6 +164,8 @@ Pair * nextTreeMap(TreeMap * tree) {
         if(is_equal(tree,aux->pair->key,tree->current->pair->key)!=1){
             tree->current = aux;
             return aux->pair;
+        }else{
+            return NULL;
         }
     }
     
