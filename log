@@ -264,3 +264,9 @@ treemap.c:164:32: error: 'TreeNode {aka struct TreeNode}' has no member named 'k
                                 ^~
 Compilation failed
 30a659a
+Sun Apr 24 01:48:26 HSP 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  23|2
+total_score: 50/70
+ad91fa2
