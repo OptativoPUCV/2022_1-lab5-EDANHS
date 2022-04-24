@@ -148,7 +148,6 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
     TreeNode *aux = NULL;
-    printf("key: %d\n",*(int*)aux->pair->key);
     if(tree->current->right != NULL){
         aux = minimum(tree->current->right);
         tree->current = aux;
