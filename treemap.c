@@ -68,10 +68,10 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
-    if(is_equal(tree,tree->root->pair->key,node->pair->key)==1){
+    /*if(is_equal(tree,tree->root->pair->key,node->pair->key)==1){
         free(node);
         return;
-    }
+    }*/
     if(node->left == NULL && node->right == NULL){
         if(node->parent->left == node){
             node->parent->left = NULL;
