@@ -154,15 +154,14 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = aux;
         //printf("key1: %d\n",*(int*)aux->pair->key);
         return aux->pair;
-    }
-    if(tree->current->right == NULL){
+    }else{
         aux = tree->current;
         while(aux->parent!=NULL && tree->lower_than(aux->parent->pair->key,tree->current->pair->key)!=1){
             aux = aux->parent;
         }
         //printf("key2: %d\n",*(int*)tree->current->pair->key);
         if(is_equal(tree,aux->pair->key,tree->current->pair->key)==0){
-            
+            tree->current = aux;
             //printf("\n");
             //printf("key1: %d\n",*(int*)aux->pair->key);
             //printf("key2: %d\n",*(int*)tree->current->pair->key);
