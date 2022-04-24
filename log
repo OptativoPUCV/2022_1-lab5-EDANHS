@@ -464,3 +464,9 @@ C:\Users\thoma\AppData\Local\Temp\ccqwCWnL.o:test.c:(.text+0x14f6): undefined re
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 50b69e9
+Sun Apr 24 17:15:12 HSP 2022: 
+ treemap.c | 18 +++---------------
+ 1 file changed, 3 insertions(+), 15 deletions(-)
+ tests:  24|2
+total_score: 55/70
+19ff483
