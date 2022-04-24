@@ -156,7 +156,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     if(tree->current->right == NULL){
         aux = tree->current;
-        while(aux->parent != NULL && *(int*)aux->parent->pair->key < *(int*)tree->current->pair->key){
+        while(aux->parent != NULL && *(int*)aux->parent->pair->key > *(int*)tree->current->pair->key){
             aux = aux->parent;
         }
         printf("key1: %d\n",*(int*)aux->pair->key);
