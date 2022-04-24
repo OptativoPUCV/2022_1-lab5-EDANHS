@@ -151,6 +151,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     if(tree->current->right != NULL){
         aux = minimum(tree->current->right);
         tree->current = aux;
+        printf("%i\n",aux->pair->key);
         return aux->pair;
     }
     if(tree->current->right == NULL){
@@ -160,6 +161,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         if(is_equal(tree,aux->pair->key,tree->current->pair->key)!=1){
             tree->current = aux;
+            printf("%i\n",aux->pair->key);
             return aux->pair;
         }
     }
