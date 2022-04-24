@@ -168,4 +168,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = aux;
         return aux->pair;
     }
+    return NULL;
 }
