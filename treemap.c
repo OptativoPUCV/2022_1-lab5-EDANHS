@@ -166,5 +166,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
     }
     printf("NULL\n");
-    return aux->pair;
+    return NULL;
 }
