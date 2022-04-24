@@ -165,6 +165,8 @@ Pair * nextTreeMap(TreeMap * tree) {
             //printf("key1: %d\n",*(int*)aux->pair->key);
             //printf("key2: %d\n",*(int*)tree->current->pair->key);
             return aux->pair;
+        }else{
+            return NULL;
         }
         
         
