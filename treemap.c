@@ -161,7 +161,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         printf("key1: %d\n",*(int*)aux->pair->key);
         printf("key2: %d\n",*(int*)tree->current->pair->key);
-        if(is_equal(tree,aux->pair->key,tree->current->pair->key)==1){
+        if(is_equal(tree,aux->parent->pair->key,tree->current->pair->key)==0){
             tree->current = aux;
             printf("\n");
             printf("key1: %d\n",*(int*)aux->pair->key);
