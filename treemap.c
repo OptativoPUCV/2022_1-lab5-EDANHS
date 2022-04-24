@@ -163,10 +163,10 @@ Pair * nextTreeMap(TreeMap * tree) {
             tree->current = aux;
             return aux->pair;
         }
-        if(tree->lower_than(aux->pair->key,tree->current->pair->key)!=1){
+        /*if(tree->lower_than(aux->pair->key,tree->current->pair->key)!=1){
             tree->current = aux;
             return aux->pair;
-        }
+        }*/
         
     }
     
