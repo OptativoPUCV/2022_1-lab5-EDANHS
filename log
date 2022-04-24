@@ -456,3 +456,11 @@ C:\Users\thoma\AppData\Local\Temp\ccOQx1t4.o:test.c:(.text+0x14f6): undefined re
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 b588f8b
+Sun Apr 24 17:14:38 HSP 2022: 
+C:\Users\thoma\AppData\Local\Temp\ccqwCWnL.o:test.c:(.text+0x1287): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccqwCWnL.o:test.c:(.text+0x133e): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccqwCWnL.o:test.c:(.text+0x141a): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccqwCWnL.o:test.c:(.text+0x14f6): undefined reference to `upperBound'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+50b69e9
