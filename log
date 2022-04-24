@@ -104,3 +104,9 @@ Sun Apr 24 00:37:39 HSP 2022:
  1 file changed, 23 insertions(+)
  tests:  0|0
 c31608f
+Sun Apr 24 00:42:26 HSP 2022: 
+ treemap.c | 16 ----------------
+ 1 file changed, 16 deletions(-)
+ tests:  16|4
+total_score: 30/70
+8c2bebd
