@@ -157,7 +157,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         printf("Entrando en ciclo:\n");
         aux = tree->current;
         printf("key1: %d\n",*(int*)aux->pair->key);
-        while(aux->parent!=NULL && tree->lower_than(aux->parent->pair->key,tree->current->pair->key)!=1){
+        while(aux->parent!=NULL && tree->lower_than(tree->current->pair->key,aux->parent->pair->key)!=1){
             printf("keyCiclo: %d\n",*(int*)aux->pair->key);
             aux = aux->parent;
         }
@@ -167,9 +167,8 @@ Pair * nextTreeMap(TreeMap * tree) {
             //printf("\n");
             printf("keyCondicion: %d\n",*(int*)aux->pair->key);
             //printf("key2: %d\n",*(int*)tree->current->pair->key);
-            return NULL;
-        }else return aux->pair;
-        
+            return aux->pair;
+        }
     }
     printf("NULL\n");
     return NULL;
