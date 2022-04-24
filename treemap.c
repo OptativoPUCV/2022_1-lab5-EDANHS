@@ -163,7 +163,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         printf("key2: %d\n",*(int*)tree->current->pair->key);
         if(*(int*)aux->pair->key != *(int*)tree->current->pair->key){
             tree->current = aux;
-            print("\n");
+            printf("\n");
             printf("key1: %d\n",*(int*)aux->pair->key);
             printf("key2: %d\n",*(int*)tree->current->pair->key);
             return aux->pair;
