@@ -316,3 +316,16 @@ Sun Apr 24 02:10:50 HSP 2022:
  tests:  24|2
 total_score: 50/70
 988a183
+Sun Apr 24 02:11:30 HSP 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'nextTreeMap':
+treemap.c:161:108: error: expected ')' before '{' token
+         while(aux->parent != NULL && tree->lower_than(aux->parent->pair->key,tree->current->pair->key) != 1{
+                                                                                                            ^
+treemap.c:170:5: error: expected expression before '}' token
+     }
+     ^
+Compilation failed
+ac78b27
