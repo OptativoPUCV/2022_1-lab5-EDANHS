@@ -329,3 +329,9 @@ treemap.c:170:5: error: expected expression before '}' token
      ^
 Compilation failed
 ac78b27
+Sun Apr 24 02:11:44 HSP 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  24|2
+total_score: 55/70
+98f83a5
