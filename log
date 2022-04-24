@@ -730,3 +730,16 @@ Sun Apr 24 19:17:27 HSP 2022:
  tests:  22|2
 total_score: 50/70
 1205709
+Sun Apr 24 19:18:24 HSP 2022: 
+ treemap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'nextTreeMap':
+treemap.c:164:71: error: expected ')' before '{' token
+         if((is_equal(tree,aux->pair->key,tree->current->pair->key)==0){
+                                                                       ^
+treemap.c:171:5: error: expected expression before '}' token
+     }
+     ^
+Compilation failed
+b3b68c6
