@@ -446,3 +446,13 @@ treemap.c:155:12: error: return from incompatible pointer type [-Werror=incompat
 cc1.exe: all warnings being treated as errors
 Compilation failed
 92bda36
+Sun Apr 24 17:14:24 HSP 2022: 
+ treemap.c | 15 ++++-----------
+ 1 file changed, 4 insertions(+), 11 deletions(-)
+C:\Users\thoma\AppData\Local\Temp\ccOQx1t4.o:test.c:(.text+0x1287): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccOQx1t4.o:test.c:(.text+0x133e): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccOQx1t4.o:test.c:(.text+0x141a): undefined reference to `upperBound'
+C:\Users\thoma\AppData\Local\Temp\ccOQx1t4.o:test.c:(.text+0x14f6): undefined reference to `upperBound'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+b588f8b
