@@ -153,15 +153,15 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = aux;
         //printf("key1: %d\n",*(int*)aux->pair->key);
         return aux->pair;
-    }
-    aux = tree->current;
-    while(aux->parent!=NULL){
-        if(tree->lower_than(aux->pair->key,aux->parent->pair->key)==1){
-            aux=aux->parent;
+    }else{
+        aux = tree->current;
+        while(aux->parent!=NULL && tree->lower_than(aux->parent->pair->key,aux->pair->key)!=1){
+            aux = aux->parent;
+        }
+        if(is_equal(tree,aux->pair->key,tree->current->pair->key)!=1){
             tree->current = aux;
             return aux->pair;
         }
-        aux = aux->parent;
     }
     return NULL;
 }
