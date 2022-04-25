@@ -155,7 +155,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         return aux->pair;
     }else{
         aux = tree->current;
-        while(aux->parent!=NULL && tree->lower_than(aux->parent->pair->key,aux->pair->key)!=1){
+        while(aux->parent!=NULL && tree->lower_than(aux->pair->key,aux->parent->pair->key)==1){
             aux = aux->parent;
         }
         if(is_equal(tree,aux->pair->key,tree->current->pair->key)!=1){
