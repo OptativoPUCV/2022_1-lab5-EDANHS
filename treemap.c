@@ -162,7 +162,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             aux = aux->parent;
         }
         printf("Fuera dciclo\n");
-        if(tree->lower_than(tree->current->pair->key,aux->pair->key)==0){
+        if(is_equal(tree,aux->pair->key,tree->current->pair->key)!=1){
             //printf("\n");
             printf("keyCondicion: %d\n",*(int*)aux->pair->key);
             //printf("key2: %d\n",*(int*)tree->current->pair->key);
