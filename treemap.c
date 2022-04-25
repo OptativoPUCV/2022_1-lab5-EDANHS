@@ -142,7 +142,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     while (aux != NULL){
         tree->current = aux;
         if((tree->lower_than(key,aux->pair->key))==1){
-            if(*(int*)aux->pair->key >= *(int*)key{
+            if(*(int*)aux->pair->key >= *(int*)key){
                 ub_node = aux;
             }
             aux = aux->left;
